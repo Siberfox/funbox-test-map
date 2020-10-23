@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import pattern from "../../assets/Pattern.png";
+
 export const MapWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -11,6 +13,8 @@ export const NavPanel = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-right: 1px solid black;
+  background-image: url(${pattern});
 `;
 
 export const MapBlock = styled.div`
@@ -23,4 +27,19 @@ export const SearchField = styled.input`
   width: 70%;
   height: 30px;
   padding: 15px;
+`;
+
+export const NavList = styled.ul`
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const NavItem = styled.li`
+  width: 70%;
+  margin-bottom: 10px;
+  color: #fff;
 `;
